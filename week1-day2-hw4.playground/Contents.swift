@@ -17,4 +17,4 @@ func largestPalindromeProduct(digit: Int) -> Int {
     return 0
 }
 
-print(largestPalindromeProduct(digit: 2))
+print(largestPalindromeProduct(digit: 3))

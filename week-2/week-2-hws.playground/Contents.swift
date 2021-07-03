@@ -38,28 +38,77 @@ extension Int {
  /// İki parametreli ve FARKLI tipli bir generic örneği yapınız... (T, U) ???
  */
 
-func concatWithSpace<T: Numeric, U: Sequence>(first: T, second: U) -> U {
+func concatWithSpace<T: Numeric, U: Sequence>(first: T, second: U) -> [String] {
+    var arr = [String]()
     //Append element by first parameter
     for i in second {
-        print("\(i) \(first)")
+        arr.append("\(i) \(first)")
     }
-    return second
+    return arr
 }
 
-concatWithSpace(first: 45, second: ["Aphid", "Bumblebee", "Cicada", "Damselfly", "Earwig",2])
+print(concatWithSpace(first: 45, second: ["Aphid", "Bumblebee", "Cicada", "Damselfly", "Earwig",2]))
 
 /**
  Project Euler 6.Question
  Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
  */
 
-func diffSumOfSquares(upto: Int) -> Int{
+func diffSumOfSquares(up to: Int) -> Int{
     // Sum of the squares formula is n * (n+1) * (2*n+1) / 6
-    let sumOfTheSquares = upto * (upto + 1) * (2 * upto + 1) / 6
+    let sumOfTheSquares = to * (to + 1) * (2 * to + 1) / 6
     
-    let squareOfSum = Int(pow(Double(upto * (upto + 1) / 2), Double(2)))
+    let squareOfSum = Int(pow(Double(to * (to + 1) / 2), Double(2)))
     
     return squareOfSum - sumOfTheSquares
 }
 
-print(diffSumOfSquares(upto: 100))
+print(diffSumOfSquares(up: 100)) //25164150
+
+/**
+ Project Euler 7.Question
+ By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+
+ What is the 10 001st prime number?
+ */
+
+func stPrimeNumber(st: Int) -> Int{
+    var count = 0
+
+    for i in 2... {
+        if i.isPrime() {
+            count += 1
+            // Return the prime number when the st number is equal to param value
+            if count == st {
+                return i
+            }
+        }
+    }
+    
+    return 0
+}
+
+print(stPrimeNumber(st: 10001)) //104743
+
+/**
+ Static keyword neden kullanırız. Örnek bir kullanım yapınız
+ */
+
+class Student {
+    var name: String
+    var surname: String
+    var no: Int
+    static var `class`: String = "9-B"
+    
+    init(name: String, surname: String, no: Int) {
+        self.name = name
+        self.surname = surname
+        self.no = no
+    }
+}
+
+let student = Student(name: "samet", surname: "alemdaroglu", no: 1234)
+print(student.surname) // must call the initializer method of student class
+print(Student.class) // does not call an initializer method of student class
+
+

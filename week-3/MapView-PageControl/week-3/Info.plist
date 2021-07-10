@@ -63,8 +63,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>I need your location</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>I need your photo library</string>
+	<string></string>
 </dict>
 </plist>

@@ -113,15 +113,34 @@ extension SearchViewController: UISearchResultsUpdating {
 extension UITableView {
 
     func setEmptyMessage(_ message: String) {
+        
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        
+        let imageView = UIImageView(image: UIImage(named: "oops")!)
+        view.addSubview(imageView)
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.widthAnchor.constraint(equalToConstant: 579 / 2).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 481 / 2).isActive = true
+        imageView.centerXAnchor.constraint(lessThanOrEqualTo: view.centerXAnchor).isActive = true
+        imageView.centerYAnchor.constraint(lessThanOrEqualTo: view.centerYAnchor).isActive = true
+        
         let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        view.addSubview(messageLabel)
+        
+        messageLabel.centerXAnchor.constraint(lessThanOrEqualTo: imageView.centerXAnchor).isActive = true
+        messageLabel.centerYAnchor.constraint(lessThanOrEqualTo: imageView.centerYAnchor, constant: 481 / 4 + 30).isActive = true
+        
+
+
         messageLabel.text = message
         messageLabel.textColor = .black
         messageLabel.numberOfLines = 0
         messageLabel.textAlignment = .center
         messageLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
-        messageLabel.sizeToFit()
+//        messageLabel.sizeToFit()
 
-        self.backgroundView = messageLabel
+        self.backgroundView = view
         self.separatorStyle = .none
     }
 

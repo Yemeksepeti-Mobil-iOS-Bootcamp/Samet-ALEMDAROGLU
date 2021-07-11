@@ -14,7 +14,6 @@
 		FA5382FD2699038E0043B644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5382FC2699038E0043B644 /* Assets.xcassets */; };
 		FA5383002699038E0043B644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5382FE2699038E0043B644 /* LaunchScreen.storyboard */; };
 		FA538310269904CB0043B644 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA53830F269904CB0043B644 /* PageViewController.swift */; };
-		FA5383172699082C0043B644 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5383162699082C0043B644 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		FA5382FF2699038E0043B644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA5383012699038E0043B644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA53830F269904CB0043B644 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		FA5383162699082C0043B644 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +58,6 @@
 		FA5382F22699038B0043B644 /* week-3 */ = {
 			isa = PBXGroup;
 			children = (
-				FA538314269907CF0043B644 /* MapView */,
 				FA538309269903F00043B644 /* Delegates */,
 				FA538308269903960043B644 /* PageControl */,
 				FA53830B2699040B0043B644 /* Resources */,
@@ -103,14 +100,6 @@
 				FA5382FE2699038E0043B644 /* LaunchScreen.storyboard */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		FA538314269907CF0043B644 /* MapView */ = {
-			isa = PBXGroup;
-			children = (
-				FA5383162699082C0043B644 /* MapViewController.swift */,
-			);
-			path = MapView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +175,6 @@
 				FA5382F82699038B0043B644 /* ViewController.swift in Sources */,
 				FA5382F42699038B0043B644 /* AppDelegate.swift in Sources */,
 				FA5382F62699038B0043B644 /* SceneDelegate.swift in Sources */,
-				FA5383172699082C0043B644 /* MapViewController.swift in Sources */,
 				FA538310269904CB0043B644 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

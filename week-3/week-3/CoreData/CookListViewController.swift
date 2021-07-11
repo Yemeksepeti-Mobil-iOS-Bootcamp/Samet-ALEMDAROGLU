@@ -67,6 +67,7 @@ extension CookListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cookCell", for: indexPath)
         
+        
         cell.textLabel?.text = cooks[indexPath.row].name
         cell.imageView?.image = cooks[indexPath.row].image
     
@@ -79,7 +80,7 @@ extension CookListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let alertController = UIAlertController(title: "Ooop?", message: "Silmek istediginize emin misiniz?", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Ooop?", message: "Are you sure to delete this item?", preferredStyle: .alert)
             let delAction = UIAlertAction(title: "Yes", style: .default) { (UIAlertAction) in
                 self.removeCookFromCoreData(id: self.cooks[indexPath.row].id)
                 self.cooks.remove(at: indexPath.row)

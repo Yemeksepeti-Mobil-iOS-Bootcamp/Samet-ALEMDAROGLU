@@ -17,11 +17,43 @@ class MapViewController: UIViewController {
     let locationManager = CLLocationManager()
     var lastLocation: CLLocation?
     
+    let myLocation = CLLocation(latitude: 41.03315, longitude: 37.49341)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         checkLocationServices()
+    }
+    
+    func pinMyLocation() {
+        let center = CLLocationCoordinate2D(latitude: myLocation.coordinate.latitude,longitude: myLocation.coordinate.longitude)
+        let pin = MKPointAnnotation()
+        pin.coordinate = center
+        let region = MKCoordinateRegion(center: center,latitudinalMeters: 100,longitudinalMeters: 100)
+        mapView.showsUserLocation = true
+        mapView.setRegion(region, animated: true)
+        mapView.addAnnotation(pin)
+        getLocationAddress(location: myLocation)
+    }
+    
+    func getLocationAddress(location: CLLocation) {
+        let geoCoder = CLGeocoder()
+        geoCoder.reverseGeocodeLocation(location) { (placemarks, error) in
+
+            if let error = error {
+                print(error)
+                return
+            }
+
+            guard let placemark = placemarks?.first else { return }
+            let name = placemark.name ?? ""
+            let country = placemark.country ?? "Country"
+            let city = placemark.administrativeArea ?? "City"
+            let state = placemark.subAdministrativeArea ?? "State"
+
+            self.addressLabel.text = "\(name) \(state), \(city), \(country)"
+        }
     }
     
     func setupLocationManager() {
@@ -52,7 +84,8 @@ class MapViewController: UIViewController {
             showUserLocationCenterMap()
             locationManager.startUpdatingLocation()*/
         //Pinleme sonrası
-        trackingLocation()
+            pinMyLocation()
+            trackingLocation()
         case .denied:
             break
         case .notDetermined:
@@ -103,29 +136,13 @@ extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         
         let center = getCenterLocation(mapView: mapView)
-        let geoCoder = CLGeocoder()
         
         guard let lastLocation = lastLocation else { return }
         
         guard center.distance(from: lastLocation) > 30 else { return }
         self.lastLocation = center
         
-        geoCoder.reverseGeocodeLocation(center) { [weak self] (placemarks, error) in
-            
-            guard let self = self else { return }
-            
-            if let error = error {
-                print(error)
-                return
-            }
-            
-            guard let placemark = placemarks?.first else { return }
-            
-            let city = placemark.locality ?? "City"
-            let street = placemark.thoroughfare ?? "Street"
-            
-            self.addressLabel.text = "\(city) - \(street)"
-        }
+        getLocationAddress(location: center)
     }
     
 }

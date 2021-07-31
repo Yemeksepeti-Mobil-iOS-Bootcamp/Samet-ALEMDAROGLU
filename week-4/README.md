@@ -1,3 +1,3 @@
 | MovieApp | TabBar | BusTicketApp | VideoGamesApp |
 | --- | --- | --- | --- |
-| ![movieapp](gifs/movieapp.gif) | ![tabbar](gifs/tabbar.gif) | ![empty-view](gifs/busticket.gif) | ![cook-list](gifs/videogames.gif) |
+| ![movieapp](Gifs/movieapp.gif) | ![tabbar](Gifs/tabbar.gif) | ![empty-view](Gifs/busticket.gif) | ![cook-list](Gifs/videogames.gif) |

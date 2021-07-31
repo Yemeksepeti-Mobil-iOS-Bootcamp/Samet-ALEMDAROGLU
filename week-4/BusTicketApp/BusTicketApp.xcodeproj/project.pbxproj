@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA1278CD26B22ADA0093996D /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1278CC26B22ADA0093996D /* UIImage+Ext.swift */; };
+		FA1278D026B22B6E0093996D /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1278CF26B22B6E0093996D /* UIImageView+Ext.swift */; };
+		FA64ED0326B1E94E00427A1F /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA64ED0226B1E94E00427A1F /* UIColor+Ext.swift */; };
+		FA68DB5A26ACC9EB002AB49F /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68DB5926ACC9EB002AB49F /* Ticket.swift */; };
+		FA68DB5E26ACCA48002AB49F /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68DB5D26ACCA48002AB49F /* Passenger.swift */; };
+		FA68DB6126ACCA5E002AB49F /* BusDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68DB6026ACCA5E002AB49F /* BusDate.swift */; };
+		FA68DB6526ACCA9B002AB49F /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA68DB6426ACCA9B002AB49F /* Clock.swift */; };
+		FA7BF6DD26B3808E003F236F /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7BF6DC26B3808E003F236F /* ColorConstants.swift */; };
+		FAC04C4426AB635400952ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC04C4326AB635400952ED2 /* AppDelegate.swift */; };
+		FAC04C4626AB635400952ED2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC04C4526AB635400952ED2 /* SceneDelegate.swift */; };
+		FAC04C4B26AB635400952ED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC04C4926AB635400952ED2 /* Main.storyboard */; };
+		FAC04C4D26AB635500952ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC04C4C26AB635500952ED2 /* Assets.xcassets */; };
+		FAC04C5026AB635500952ED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC04C4E26AB635500952ED2 /* LaunchScreen.storyboard */; };
+		FAC8E2F426B0BFDF002175D5 /* SeatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8E2F226B0BFDF002175D5 /* SeatCollectionViewCell.swift */; };
+		FAC8E2F526B0BFDF002175D5 /* SeatCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC8E2F326B0BFDF002175D5 /* SeatCollectionViewCell.xib */; };
+		FAF4FF1926B4A2D800FD26D0 /* SeatSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF4FF1826B4A2D800FD26D0 /* SeatSelectionViewController.swift */; };
+		FAF4FF1C26B4A32B00FD26D0 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF4FF1B26B4A32B00FD26D0 /* DatePickerViewController.swift */; };
+		FAF4FF2026B4A42B00FD26D0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF4FF1F26B4A42B00FD26D0 /* BaseViewController.swift */; };
+		FAF4FF2826B4C5DE00FD26D0 /* BusTicketCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAF4FF2626B4C5DE00FD26D0 /* BusTicketCD.xcdatamodeld */; };
+		FAF4FF2E26B4CE8B00FD26D0 /* PassengerInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF4FF2D26B4CE8B00FD26D0 /* PassengerInformationViewController.swift */; };
+		FAF4FF3226B4D82900FD26D0 /* TicketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF4FF3126B4D82900FD26D0 /* TicketDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA1278CC26B22ADA0093996D /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		FA1278CF26B22B6E0093996D /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		FA64ED0226B1E94E00427A1F /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		FA68DB5926ACC9EB002AB49F /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		FA68DB5D26ACCA48002AB49F /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
+		FA68DB6026ACCA5E002AB49F /* BusDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusDate.swift; sourceTree = "<group>"; };
+		FA68DB6426ACCA9B002AB49F /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		FA7BF6DC26B3808E003F236F /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		FAC04C4026AB635400952ED2 /* BusTicketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusTicketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC04C4326AB635400952ED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAC04C4526AB635400952ED2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FAC04C4A26AB635400952ED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAC04C4C26AB635500952ED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAC04C4F26AB635500952ED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAC04C5126AB635500952ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC8E2F226B0BFDF002175D5 /* SeatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatCollectionViewCell.swift; sourceTree = "<group>"; };
+		FAC8E2F326B0BFDF002175D5 /* SeatCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeatCollectionViewCell.xib; sourceTree = "<group>"; };
+		FAF4FF1826B4A2D800FD26D0 /* SeatSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatSelectionViewController.swift; sourceTree = "<group>"; };
+		FAF4FF1B26B4A32B00FD26D0 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		FAF4FF1F26B4A42B00FD26D0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FAF4FF2726B4C5DE00FD26D0 /* BusTicketCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BusTicketCD.xcdatamodel; sourceTree = "<group>"; };
+		FAF4FF2D26B4CE8B00FD26D0 /* PassengerInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerInformationViewController.swift; sourceTree = "<group>"; };
+		FAF4FF3126B4D82900FD26D0 /* TicketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAC04C3D26AB635400952ED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA64ED0126B1E91D00427A1F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA64ED0226B1E94E00427A1F /* UIColor+Ext.swift */,
+				FA1278CC26B22ADA0093996D /* UIImage+Ext.swift */,
+				FA1278CF26B22B6E0093996D /* UIImageView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA68DB5826ACC9C8002AB49F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA68DB5926ACC9EB002AB49F /* Ticket.swift */,
+				FA68DB5D26ACCA48002AB49F /* Passenger.swift */,
+				FA68DB6026ACCA5E002AB49F /* BusDate.swift */,
+				FA68DB6426ACCA9B002AB49F /* Clock.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FA7BF6DB26B38078003F236F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FA7BF6DC26B3808E003F236F /* ColorConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FAC04C3726AB635400952ED2 = {
+			isa = PBXGroup;
+			children = (
+				FAC04C4226AB635400952ED2 /* BusTicketApp */,
+				FAC04C4126AB635400952ED2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAC04C4126AB635400952ED2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAC04C4026AB635400952ED2 /* BusTicketApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAC04C4226AB635400952ED2 /* BusTicketApp */ = {
+			isa = PBXGroup;
+			children = (
+				FA68DB5826ACC9C8002AB49F /* Classes */,
+				FA7BF6DB26B38078003F236F /* Constants */,
+				FAC04C5826AB635C00952ED2 /* Delegates */,
+				FA64ED0126B1E91D00427A1F /* Extensions */,
+				FAC04C5A26AB63D500952ED2 /* Resources */,
+				FAC8E2ED26B0BEB3002175D5 /* Sections */,
+				FAC04C5926AB63C700952ED2 /* UI */,
+				FAC04C5126AB635500952ED2 /* Info.plist */,
+				FAF4FF2626B4C5DE00FD26D0 /* BusTicketCD.xcdatamodeld */,
+			);
+			path = BusTicketApp;
+			sourceTree = "<group>";
+		};
+		FAC04C5826AB635C00952ED2 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FAC04C4326AB635400952ED2 /* AppDelegate.swift */,
+				FAC04C4526AB635400952ED2 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		FAC04C5926AB63C700952ED2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FAC04C4E26AB635500952ED2 /* LaunchScreen.storyboard */,
+				FAC04C4926AB635400952ED2 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FAC04C5A26AB63D500952ED2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAC04C4C26AB635500952ED2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAC8E2ED26B0BEB3002175D5 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				FAEE801326B4DA8B000BD7B7 /* Base */,
+				FAF4FF3426B4D97600FD26D0 /* TicketDetail */,
+				FAF4FF2C26B4CE6100FD26D0 /* PassengerInformation */,
+				FAF4FF1726B4A25B00FD26D0 /* SeatSelection */,
+				FAF4FF1626B4A24500FD26D0 /* DatePicker */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		FAC8E2F026B0BF47002175D5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8E2F226B0BFDF002175D5 /* SeatCollectionViewCell.swift */,
+				FAC8E2F326B0BFDF002175D5 /* SeatCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAEE801326B4DA8B000BD7B7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FAF4FF1F26B4A42B00FD26D0 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FAF4FF1626B4A24500FD26D0 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				FAF4FF1B26B4A32B00FD26D0 /* DatePickerViewController.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		FAF4FF1726B4A25B00FD26D0 /* SeatSelection */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8E2F026B0BF47002175D5 /* Cells */,
+				FAF4FF1826B4A2D800FD26D0 /* SeatSelectionViewController.swift */,
+			);
+			path = SeatSelection;
+			sourceTree = "<group>";
+		};
+		FAF4FF2C26B4CE6100FD26D0 /* PassengerInformation */ = {
+			isa = PBXGroup;
+			children = (
+				FAF4FF2D26B4CE8B00FD26D0 /* PassengerInformationViewController.swift */,
+			);
+			path = PassengerInformation;
+			sourceTree = "<group>";
+		};
+		FAF4FF3426B4D97600FD26D0 /* TicketDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FAF4FF3126B4D82900FD26D0 /* TicketDetailViewController.swift */,
+			);
+			path = TicketDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAC04C3F26AB635400952ED2 /* BusTicketApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC04C5426AB635500952ED2 /* Build configuration list for PBXNativeTarget "BusTicketApp" */;
+			buildPhases = (
+				FAC04C3C26AB635400952ED2 /* Sources */,
+				FAC04C3D26AB635400952ED2 /* Frameworks */,
+				FAC04C3E26AB635400952ED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BusTicketApp;
+			productName = BusTicketApp;
+			productReference = FAC04C4026AB635400952ED2 /* BusTicketApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAC04C3826AB635400952ED2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FAC04C3F26AB635400952ED2 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = FAC04C3B26AB635400952ED2 /* Build configuration list for PBXProject "BusTicketApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAC04C3726AB635400952ED2;
+			productRefGroup = FAC04C4126AB635400952ED2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAC04C3F26AB635400952ED2 /* BusTicketApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAC04C3E26AB635400952ED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC04C5026AB635500952ED2 /* LaunchScreen.storyboard in Resources */,
+				FAC04C4D26AB635500952ED2 /* Assets.xcassets in Resources */,
+				FAC04C4B26AB635400952ED2 /* Main.storyboard in Resources */,
+				FAC8E2F526B0BFDF002175D5 /* SeatCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAC04C3C26AB635400952ED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF4FF2E26B4CE8B00FD26D0 /* PassengerInformationViewController.swift in Sources */,
+				FA1278D026B22B6E0093996D /* UIImageView+Ext.swift in Sources */,
+				FAF4FF1926B4A2D800FD26D0 /* SeatSelectionViewController.swift in Sources */,
+				FAF4FF1C26B4A32B00FD26D0 /* DatePickerViewController.swift in Sources */,
+				FA68DB6126ACCA5E002AB49F /* BusDate.swift in Sources */,
+				FA7BF6DD26B3808E003F236F /* ColorConstants.swift in Sources */,
+				FAF4FF2026B4A42B00FD26D0 /* BaseViewController.swift in Sources */,
+				FAC04C4426AB635400952ED2 /* AppDelegate.swift in Sources */,
+				FAC8E2F426B0BFDF002175D5 /* SeatCollectionViewCell.swift in Sources */,
+				FA68DB6526ACCA9B002AB49F /* Clock.swift in Sources */,
+				FAF4FF2826B4C5DE00FD26D0 /* BusTicketCD.xcdatamodeld in Sources */,
+				FA1278CD26B22ADA0093996D /* UIImage+Ext.swift in Sources */,
+				FA68DB5E26ACCA48002AB49F /* Passenger.swift in Sources */,
+				FA64ED0326B1E94E00427A1F /* UIColor+Ext.swift in Sources */,
+				FAC04C4626AB635400952ED2 /* SceneDelegate.swift in Sources */,
+				FAF4FF3226B4D82900FD26D0 /* TicketDetailViewController.swift in Sources */,
+				FA68DB5A26ACC9EB002AB49F /* Ticket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAC04C4926AB635400952ED2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC04C4A26AB635400952ED2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAC04C4E26AB635500952ED2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC04C4F26AB635500952ED2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAC04C5226AB635500952ED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAC04C5326AB635500952ED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAC04C5526AB635500952ED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BusTicketApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sametalemdaroglu.BusTicketApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAC04C5626AB635500952ED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BusTicketApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sametalemdaroglu.BusTicketApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAC04C3B26AB635400952ED2 /* Build configuration list for PBXProject "BusTicketApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC04C5226AB635500952ED2 /* Debug */,
+				FAC04C5326AB635500952ED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC04C5426AB635500952ED2 /* Build configuration list for PBXNativeTarget "BusTicketApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC04C5526AB635500952ED2 /* Debug */,
+				FAC04C5626AB635500952ED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAF4FF2626B4C5DE00FD26D0 /* BusTicketCD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAF4FF2726B4C5DE00FD26D0 /* BusTicketCD.xcdatamodel */,
+			);
+			currentVersion = FAF4FF2726B4C5DE00FD26D0 /* BusTicketCD.xcdatamodel */;
+			path = BusTicketCD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FAC04C3826AB635400952ED2 /* Project object */;
+}

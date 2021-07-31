@@ -26,20 +26,20 @@ class Game {
         bottle.location = location
     }
     
-    func setCannonTeta(angle: Double, speed: Double) {
+    func setCannon(angle: Double, speed: Double) {
         cannon.teta = angle
         cannon.speed = speed
     }
     
-    func throwTheBall() {
+    func throwTheBall() -> Double {
         let G = 10.0
-        let R = cannon.speed * cannon.speed * sin(2 * cannon.teta) / G
+        let R = cannon.speed * cannon.speed * __sinpi(2 * cannon.teta/180) / G
         
         if((bottle.location - bottle.delta) <= R && (bottle.location + bottle.delta) >= R ) {
             bottle.state = .fellDown
         }else {
             bottle.state = .standing
         }
+        return R
     }
-    
 }
